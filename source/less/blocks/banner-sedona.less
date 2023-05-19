@@ -1,8 +1,8 @@
-.banner-sedona {
+.banner {
   display: block;
   position: relative;
   margin: auto;
-  background-image: url("/img/index/backround-banner.jpg");
+  background-image: url("/img/background-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% -9px;
@@ -10,7 +10,7 @@
   height: 389px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/index/background-banner@2x.jpg");
+    background-image: url("/img/background-img@2x.jpg");
     background-size: 1200px auto;
   }
 
@@ -27,7 +27,25 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-position: 55% 46px;
+    background-position: 55% 0;
+    height: 518px;
+
+    &--other {
+      background-position: 55% 0;
+      height: 290px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1200px;
+        height: 57px;
+        right: 50%;
+        bottom: 0;
+        transform: translate(50%, 0%);
+        background-image: url("/img/vector.svg");
+        z-index: 1;
+      }
+    }
 
     &::after {
       content: "";
@@ -47,6 +65,24 @@
     height: 518px;
     width: 1200px;
 
+    &--other {
+      position: relative;
+      background-position: 55% -26px;
+      height: 300px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1200px;
+        height: 57px;
+        right: 50%;
+        bottom: 0;
+        transform: translate(50%, 0%);
+        background-image: url("/img/vector.svg");
+        z-index: 1;
+      }
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -54,7 +90,7 @@
       height: 57px;
       right: 50%;
       bottom: 26px;
-      transform: translate(50%, 0);
+      transform: translate(50%, 2%);
       background-image: url("/img/vector.svg");
       z-index: 1;
     }
