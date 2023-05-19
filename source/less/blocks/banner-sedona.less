@@ -14,13 +14,17 @@
     background-size: 1200px auto;
   }
 
+  &--other {
+    height: 160px;
+  }
+
   &::after {
     content: "";
     position: absolute;
     width: 1200px;
     height: 57px;
     right: 50%;
-    bottom: 26px;
+    bottom: 17px;
     transform: translate(50%, 30%);
     background-image: url("/img/vector.svg");
     z-index: 1;
@@ -97,11 +101,42 @@
   }
 }
 
-.welcome-banner__text {
+.welcome-banner__index {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 282px;
   height: 214px;
   padding: 90px 19px 85px 19px;
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 154px 91px 154px;
+    height: 349.97px;
+    width: 461px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 77px 154px 91px 154px;
+    height: 349.97px;
+    width: 459.5px;
+  }
+}
+
+.welcome-banner__other {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 52px 45px 67px 45px;
+
+  @media (min-width: @tablet-width) {
+    padding: 95px 157px 117.4px 157px;
+    height: 77.6px;
+    width: 456.9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 101px 370px 120.2px 370px;
+    height: 79.8px;
+    width: 459.5px;
+  }
 }
