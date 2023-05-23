@@ -101,7 +101,7 @@
   }
 }
 
-.welcome-banner__index {
+.welcome-banner {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -120,23 +120,34 @@
     height: 349.97px;
     width: 459.5px;
   }
-}
 
-.welcome-banner__other {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 52px 45px 67px 45px;
+  &--sedona {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 52px 45px 67px 45px;
 
-  @media (min-width: @tablet-width) {
-    padding: 95px 157px 117.4px 157px;
-    height: 77.6px;
-    width: 456.9px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 101px 370px 120.2px 370px;
-    height: 79.8px;
-    width: 459.5px;
+    .logo-welcome {
+      display: none;
+    }
   }
 }
+
+// .welcome-banner__other {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding: 52px 45px 67px 45px;
+
+//   @media (min-width: @tablet-width) {
+//     padding: 95px 157px 117.4px 157px;
+//     height: 77.6px;
+//     width: 456.9px;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     padding: 101px 370px 120.2px 370px;
+//     height: 79.8px;
+//     width: 459.5px;
+//   }
+// }
